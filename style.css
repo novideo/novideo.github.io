@@ -1,8 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /* navi bar */
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap'); /* header */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* main paragraph */
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap'); /* strong logo */
-/* yes I know I can make this into one, but this looks more concrete :D */
+/* ---Fonts---*/
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/montserrat-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* handjet-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Handjet';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/handjet-v17-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* handjet-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Handjet';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/handjet-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  
+  /* roboto-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  
+
+/* borel-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Borel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/borel-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 body {
     background-color: #F6F6F6;
@@ -87,7 +146,7 @@ main { /* restricts the size of main section */
 
 main img:not([src$=".svg"]) { /* restricts the size of images that do NOT end in '.svg' */
     max-width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 5%;
 }
 
@@ -99,20 +158,39 @@ main h1 {
 
 main h2 {
     font-size: 2.75rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     font-family: 'Handjet', cursive;
 }
 
 main h3 {
     font-size: 2rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     font-family: 'Handjet', cursive;
 }
 
 main h4 {
     font-size: 1.5rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     font-family: 'Handjet', cursive;
+}
+
+main p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+main iframe {
+    margin-bottom: 0rem;
+}
+
+main figure {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 main p a:link,
@@ -132,14 +210,7 @@ main a:hover {
     transition: all 0.2s ease 0s;
 }
 
-main p {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5rem;
-}
 
-main iframe {
-    margin-bottom: 0rem;
-}
 /* ---main css end--- */
 
 /* manages space for full screen devices*/
