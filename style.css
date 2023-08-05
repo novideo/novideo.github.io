@@ -36,6 +36,11 @@ body {
         transition: all 0.2s ease 0s;
     }
 
+    body main a:hover {
+        color: #d89494;
+        transition: all 0.2s ease 0s;
+    }
+
     body main img[src$=".svg"] { /* inverting of only images that end in .svg aka logos  */
         -webkit-filter: invert(100%);
                 filter: invert(100%);
