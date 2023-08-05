@@ -82,26 +82,26 @@ main img:not([src$=".svg"]) { /* restricts the size of images that do NOT end in
 
 main h1 {
     font-size: 3.25rem;
+    margin: 2rem 0rem;
+    font-family: 'Handjet', cursive;
 }
 
 main h2 {
     font-size: 2.75rem;
+    margin: 2rem 0rem;
+    font-family: 'Handjet', cursive;
 }
 
 main h3 {
     font-size: 2rem;
+    margin: 2rem 0rem;
+    font-family: 'Handjet', cursive;
 }
 
 main h4 {
     font-size: 1.5rem;
-}
-
-main h1,
-main h2,
-main h3,
-main h4 {
- margin: 2rem 0rem 2rem;
- font-family: 'Handjet', cursive;
+    margin: 2rem 0rem;
+    font-family: 'Handjet', cursive;
 }
 
 main a:link,
@@ -121,7 +121,7 @@ main p {
 }
 
 main iframe {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 /* ---main css end--- */
 
