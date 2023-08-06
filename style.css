@@ -210,21 +210,6 @@ main a:hover {
     transition: all 0.2s ease 0s;
 }
 
-main .image_and_text_right_container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .image_and_text_right_container .cover {
-    flex: 1;
-    margin-right: 1rem;
-    float: left;
-}
-
-main .text {
-    flex: 1;
-}
-
 
 /* ---main css end--- */
 
