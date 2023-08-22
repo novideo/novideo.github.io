@@ -110,12 +110,10 @@ body {
 header { /* restricts the size of header section */
     max-width: 32rem;
     margin: 0 auto;
-}
-
-header {
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
 }
+
 
 header a {
     color: #000000;
@@ -287,6 +285,7 @@ main a:hover {
         flex-direction: row;
         text-align: center;
         align-items: center;
+        justify-items: center;
         gap: 2rem;
     }
 
