@@ -219,7 +219,7 @@ main a:hover {
         margin-top: 2rem;
         display: grid;
         grid-template-columns: auto auto;
-        gap: 3rem; /* adjusts gap between navi bar and body */
+        grid-gap: 3rem; /* adjusts gap between navi bar and body */
         justify-items: left;
     }
 
@@ -260,7 +260,7 @@ main a:hover {
         margin-top: 2rem;
         display: grid;
         grid-template-columns: auto;
-        gap: 3rem;
+        grid-gap: 3rem;
         justify-items: left;
     }
 
