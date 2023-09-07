@@ -223,7 +223,7 @@ main a:hover {
 
     main {
         margin: 0rem 0rem 20rem;
-        margin-right: 6rem;
+        margin-right: 6rem; /* leaves margin space on right */
     }
 
     main :first-child {
